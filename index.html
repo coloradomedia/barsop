@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Barsop.pl</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  <link rel="icon" type="favicon.ico" href="img/favicon.ico" />
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#home" class="navbar-brand">BARSOP.PL
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" class="active fa fa-home"></a></li>
+          <li><a href="#about">Dane Firmy</a></li>
+          <li><a href="#offer">Oferta</a></li>
+          <li><a href="#map">Lokalizacja</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <div class="landing-text">
+      <h1>BARSOP WB-CAR S.C.</h1>
+      <h4>Bartosz Sopata</h4><br>
+      <a href="https://wb-car.otomoto.pl/" target="_blank" class="btn btn-default btn-lg">WB-CAR OTOMOTO</a>
+      <a href="https://allegro.pl/uzytkownik/barsop?order=m" target="_blank" class="btn btn-default btn-lg">BARSOP ALLEGRO</a><br>
+            <a href="http://www.ontexglobal.com/our-brands" target="_blank" class="btn btn-default btn-lg">Dystrybucja produktów ONTEX</a>
+    </div>
+  </div>
+  <div class="padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h3>DANE FIRMY</h3><br>
+          <p>F.H. Barsop <br>WB-CAR S.C. <br>Bartosz Sopata</p>
+          <p><b>Tel: </b>(18) 332 53 11 <br><b>E-mail: </b>
+          
+            <span class="antispambot">lp.posrab@ofni</span>
+
+            
+          <br><b>NIP: </b>7371398710</p><br>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <h3>ADRES <br> KORESPONDENCYJNY</h3><br>
+          <p>Barsop <br>Tymbark 343 <br>34-650 Tymbark</p>          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="fixed"></div>
+      <div class="padding" id="offer">
+          <div class="container">
+            <div class="row0">
+                <div class="col-lg-8 col-md-8 ">
+                    <h2>OFERTA</h2>
+                    <p>Firma BARSOP zajmuje się sprzedażą wysyłkową produktów znanych i cenionych firm w Polsce i na świecie. Posiadamy szeroką gamę produktów marki Brubeck, Arctica, Garmin oraz wielu innych. Sprzedaż prowadzona jest w serwisie aukcyjnym Allegro.pl - użytkownik "barsop".</p>                  
+                    <p>Spółka WB-CAR sprowadza sprawdzone i bezwypadkowe samochody poleasingowe kupowane m.in. od banków. Dzięki temu mamy 100% pewność, że pojazdy przeszły dokładną kontrolę przez niezależnych rzeczoznawców i nie mają zatajonych wad.</p>
+                  </div>
+              <div class="col-lg-4 col-md-4 " id="logo">
+                <img src="img/wb.png" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d1644.538842624843!2d20.319174001652996!3d49.73812021565508!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1525622247612" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>          
+          </div>
+
+  <footer class="container-fluid text-center">
+      <p>Barsop.pl Bartosz Sopata &copy2018 Wykonanie Piotr Majkrzak</p>
+  </footer>
+
+  <script>
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+          </script>
+</body>
+</html>

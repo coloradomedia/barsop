@@ -1,0 +1,136 @@
+﻿html, body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.navbar{
+	background-color: rgb(0,0,0, 0.5);
+	font-size: 1.2em;
+	text-align: center;
+	border-top: #00b300 solid 0.3em;
+	border-bottom: none;
+}
+
+.navbar-brand{
+	min-height: 50px;
+	color: #fff;
+}
+.navbar-default .navbar-brand{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav li a{
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav li:hover{
+	background: #00b300;
+}
+
+.navbar-default .navbar-nav li a:hover{
+	color: #000;
+	background: #00b300;
+}
+
+
+#home{
+	background: url(img/moviepicture.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.landing-text h1,h4{
+	font-size: 500%;
+	font-weight: 600;
+	color: #fff;
+}
+
+.padding{
+	padding: 80px 0;
+}
+
+.padding img{
+	width: 100%;
+}
+
+#fixed{
+	background: url(img/car-inside.jpg) no-repeat center center fixed;
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+footer{
+	width: 100%;
+	background-color: #23415c;
+	padding: 2%;
+	color: #fff;
+}
+
+.fa{
+	padding: 15px;
+	font-size: 25px;
+	color: #fff;
+}
+
+.fa:hover{
+	color: #d5d5d5;
+	text-decoration: none;
+}
+
+.row h3{
+	font-weight: bold;
+}
+
+.row{
+	font-size: 20px;
+	padding-left: 4em;
+}
+
+.row0{
+	font-size: 18px;
+}
+
+#logo{
+	padding-top: 10%;
+}
+
+.map{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: -1%;
+}
+
+.antispambot {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+
+.btn{
+    margin: 0.4em;
+}
+
+@media (max-width: 768px){
+	.landing-text h1,h4{
+		font-size: 300%;
+	}
+
+
+
+}
